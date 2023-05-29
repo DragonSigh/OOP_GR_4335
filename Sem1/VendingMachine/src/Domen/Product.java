@@ -54,7 +54,7 @@ public class Product {
     {
         return "Product{" +
         "name='" + productName + '\'' +
-        "category='" + productCategory + '\'' +
+        ", category='" + productCategory + '\'' +
         ", cost=" + price +
         '}';
     }

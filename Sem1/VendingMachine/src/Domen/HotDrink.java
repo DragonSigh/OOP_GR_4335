@@ -1,10 +1,10 @@
 package Domen;
 
-public class Bottle extends Product {
-        private int volume;
+public class HotDrink extends Product {
+        private int temperature;
     
         /**
-         * Create a product for VM
+         * Hot drink - a product for VM
          *
          * @param productId       id product
          * @param productName
@@ -12,27 +12,27 @@ public class Bottle extends Product {
          * @param price
          * @throws Exception
          */
-        public Bottle(int productId, String productName, String productCategory, double price, int volume) throws Exception {
+        public HotDrink(int productId, String productName, String productCategory, double price, int temperature) throws Exception {
             super(productId, productName, productCategory, price);
-            this.volume = volume;
+            this.temperature = temperature;
         }
 
-        public int getVolume() {
-            return volume;
+        public int getTemperature() {
+            return temperature;
         }
 
-        public void setVolume(int volume) {
-            this.volume = volume;
+        public void setTemperature(int temperature) {
+            this.temperature = temperature;
         }
 
         @Override
         public String toString()
         {
-            return "Bottle{" +
+            return "HotDrink{" +
             "name='" + super.getProductName() + '\'' +
             ", category='" + super.getProductCategory() + '\'' +
             ", cost=" + super.getPrice() +
-            ", volume=" + volume +
+            ", temperature=" + temperature +
             '}';
         }
     }
