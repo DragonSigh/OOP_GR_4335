@@ -7,9 +7,9 @@ public class HotDrink extends Product {
          * Hot drink - a product for VM
          *
          * @param productId       id product
-         * @param productName
-         * @param productCategory
-         * @param price
+         * @param productName name 
+         * @param productCategory cat
+         * @param price cost
          * @throws Exception
          */
         public HotDrink(int productId, String productName, String productCategory, double price, int temperature) throws Exception {
